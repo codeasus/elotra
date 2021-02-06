@@ -16,7 +16,7 @@
 
 ## Screenshots :: trip.html -> javascript carousel
 
-  ![](screenshots/trip_slider.png)
+  ![](screenshots/tripSlider.png)
 
 
 
