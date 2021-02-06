@@ -1,6 +1,6 @@
 # Elotra
 
-  During the project as we had less time, mobile responsiveness was not priority. Therefore, if some files do not not scale well on mobile screen resolutions, it is    because the project was intented to be a prototype.    
+  During the project as we had less time, mobile responsiveness was not the priority. Therefore, if some pages do not not scale well or respond properly on different screen resolutions, it is because the project was intented to be a prototype and some part of the project was hard coded.    
 
 ## Screenshots :: index.html
 
