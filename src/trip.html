@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+    <head>
+        <title>Trips</title>
+        
+        <!-- <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>  -->
+        <!-- <link rel="stylesheet" type="text/css" href="CSSs/contact.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="CSSs/indexSlideShow.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/trip.css">
+        <link rel="stylesheet" type="text/css" href="css/tripCard.css">
+        <link rel="stylesheet" type="text/css" href="css/createTrip.css">
+        <link rel="stylesheet" type="text/css" href="css/response.css">
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="Assets/favicon.ico"> -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div class = "upperNavBar">
+            <div class = "socialLinks">
+                <div class = "socialIconContainer">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+            <div class="searchBox">
+                <div class="boxSelf">
+                <input class="searchInput" type="text" >
+                </div>
+            </div>
+            <div class = "registerSection">
+                <div class="g">
+                            <button class = "registerButton" value="subscibe">LogIn/Register</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="regForm">
+                <div class = "reg">
+                    <form class="registerForm">
+                        <div class="headingForm">
+                            <h1>Register</h1>
+                        </div>
+                        <div class="firstLast">
+                            <div id = "firstLastLeft">
+                                <input type="text" placeholder="First Name"/>
+                            </div>
+                            <div id = "firstLastRight">
+                                <input type="text" placeholder="Last Name"/>
+                            </div>
+                        </div>
+
+                        <div class="noChange">
+                            <div id = "noChangeTop">
+                                <input type="email" placeholder="Email"/>
+                            </div>
+                            <div id = "noChangeMiddle">
+                                <input type="password" placeholder="Password"/>
+                            </div>
+                            <div id = "noChangeBottom">
+                                <input type="password" placeholder="*Password"/>
+                            </div>
+                        </div>
+                        <div class="country_bday">
+                            <div id = "country_bdayLeft">
+                                <input type="date" name="Birtdate"/>
+                            </div>
+                            <div id = "country_bdayRight">
+                                <input type="text" name="Country" placeholder="Country"/>
+                            </div>
+                        </div>
+                        <div class="gender_payment_hour">
+                            <div id = "gender_payment_hour_left">
+                                    <select name="gender">
+                                            <option value="male" selected>Male</option>
+                                            <option value="female">Female</option>
+                                    </select>
+                            </div>
+                            <div id = "gender_payment_hour_middle">
+                                    <input type="number" name="hourlyPayment" placeholder="Payment/Hour">
+                            </div>
+                            <div id = "gender_payment_hour_right">
+                                    <input type="number" name="minServiceDuration" placeholder="Service Duration">
+                            </div>
+                        </div>
+                        <div class="buttonForm">
+                            <button>SignUp</button>
+                            <p class = "switch toLog">Already Registered?<a href = "#"> Log In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+            <div class="logForm">
+                <div class = "log">
+                    <form class="loginForm">
+                            <h2>Log In</h2>
+                            <input type="email" placeholder="Email"/>
+                            <input type="password" placeholder="*Password"/>
+                            <button>SignIn</button>
+                            <p class = "switch toReg">Not Registered?<a href = "#"> Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+            <div class="secondNavWhole_">
+                <!-- <div class="load"></div> -->
+                <div class="secondNavBar_">
+                    <div class="logo">
+                            <a href="#"><i class="fas fa-globe-americas"></i></a>
+                    </div>
+                    <div class="navButtons">
+                        <ul class="navButtonsList">
+                            <li class="navButton_home">HOME</li>
+                            <li class="navButton_about">ABOUT</li>
+                            <li class="navButton_trip">TRIP</li>
+                            <li class="navButton_contact">CONTACT</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="profile"></div> -->
+                </div>
+                <div class="secondSlogan">
+                        <h1>MY TRIPS</h1>
+                        <p>Save your time by planning your <b>Trip</b> and get offers from <b>Locals</b></p>
+                        <p>The community is always ready to show you</p>
+                        <p>the <b>Wonders</b> of the world.</p>
+                </div>
+                <div class="addTripButton">
+                        <button class="tripButton">Add Trip</button>                    
+                </div>
+                <div class="emptyAsFuck"></div>
+            </div>
+
+
+            <div class="getIn">
+                <div>
+                        <h1>Connect People All around the World.</h1>
+                </div>
+            </div>
+
+            <div class="popUpResponse">
+                <div class="responseHolder">
+                        <div class="responseHolderUp">
+                                <h4>Are you sure?</h4>
+                        </div>
+                        <div class="responseHolderDown">
+                            <button class="confirm">Yes</button>
+                            <button class="deny">No</button>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <!-- ADD TRIP POP UP MENU -->
+
+            <div class="tripPopUpMenu">
+                <form class="popUpSelf">
+                    <div class="popUpHeading">
+                        <h3>Create a Trip</h3>
+                    </div>
+
+                    <div class="popUpDestination">
+                        <div>
+                            <label>Your destination?</label>
+                        </div>
+                        <input type="text" placeholder="Where next?">
+                    </div>
+
+                    <div class="popUpDateFrom">
+                            <div>
+                                <label>From Date</label>
+                            </div>
+                            <input type="date">
+                    </div>
+
+                    <div class="popUpDateTo">
+                            <div>
+                                <label>Date To</label>
+                            </div>
+                            <input type="date">
+                    </div>
+
+    
+                    <div class="popUpPeople">
+                        <div class="popUpPLeft">
+                            <label >Number of people :</label>
+                        </div>
+
+                        <div class="popUpNumber">
+                                <select name="gender">
+                                        <option value="me" selected>Just Me</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        <option value="4">Four</option>
+                                        <option value="moreThan">More than four</option>
+                                </select>
+                        </div>
+                    </div>
+
+
+                    <div class="popUpLocalChoice">
+                            <div class="localChoicePLeft">
+                                    <label>Looking for a local :</label>
+                                </div>
+        
+                            <div class="localChoiceOption">
+                                    <select name="options">
+                                        <option value="male" selected>Male</option>
+                                        <option value="female">Famale</option>
+                                        <option value="3">Company</option>
+                                    </select>
+                            </div>
+                    </div>
+
+
+                    <div class="popUpCheckBox">
+                            <div class="CheckLeft">
+                                    <label>Would you be a guider :</label>
+                                </div>
+        
+                            <div class="CheckOption">
+                                    <select name="options">
+                                        <option value="one" selected>Yes</option>
+                                        <option value="zero">No</option>
+                                    </select>
+                            </div>
+                    </div>
+
+
+
+                    <div class="popUpButtonSection">
+                        <button>Create</button>
+                    </div>
+
+                </form>        
+            </div>
+
+
+            <div class="backEndConnection">
+                <div class="calContainer">
+                    <div>
+                        <h3>PARTNERS</h3>
+                        <h3>423</h3>
+                    </div>
+
+                    <div>
+                        <h3>USERS</h3>
+                        <h3>347638</h3>
+                    </div>
+
+                    <div>
+                        <h3>TRIPS</h3>        
+                        <h3>9451</h3>                
+                    </div>
+                </div>
+            </div>
+
+            <div class="yourTripHeading">
+                <div>
+                    <h1>Your Trips</h1>
+                </div>
+            </div>
+
+            <div class="tripContainer">
+
+                <div class="slickSliderHolder">
+                    <div>
+                            <div class="tripCard" style = "background-image: linear-gradient(to top, #4043fb 0%, #c259ff 100%)">
+                                    <div class="destName">
+                                        <h1 id="destNameDiv">London</h1>
+                                    </div>    
+                
+                
+                                    <div class="tripGuiderInfo">
+                                        <div class="tripGuiderInfoUp">
+                                            <p>Guider Info</p>
+                                        </div>
+                                        <div class="tripGuiderInfoDown">
+                                            <p>Orhan Rosenfeld</p>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="cardDateFrom">
+                                        <h4 id="dateFromLeft">Date From :</h4>
+                                        <h4 id="dateFromRight">18.05.2019</h4>
+                
+                                    </div>
+                
+                                    <div class="cardDateTo">
+                                            <h4 id="dateToLeft">Date To :<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></h4>
+                                            <h4 id="dateToRight">24.05.2019</h4>
+                                    </div>
+                
+                                    <div class="cardControlButton">
+                                                <i class="fas fa-play"></i>
+                                                <i class="fas fa-times"></i>
+                                                <i class="fas fa-stop"></i>
+                                                
+                                    </div>
+                            </div>
+
+                    </div>
+
+                    <div>
+                            <div class="tripCard" style = "background-image: linear-gradient(to top, #fa709a 0%, #fee140 100%)">
+                                    <div class="destName">
+                                        <h1 id="destNameDiv">Norway</h1>
+                                    </div>    
+                
+                
+                                    <div class="tripGuiderInfo">
+                                        <div class="tripGuiderInfoUp">
+                                            <p>Guider Info</p>
+                                        </div>
+                                        <div class="tripGuiderInfoDown">
+                                            <p>Orhan Rosenfeld</p>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="cardDateFrom">
+                                        <h4 id="dateFromLeft">Date From :</h4>
+                                        <h4 id="dateFromRight">18.05.2019</h4>
+                
+                                    </div>
+                
+                                    <div class="cardDateTo">
+                                            <h4 id="dateToLeft">Date To :<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></h4>
+                                            <h4 id="dateToRight">24.05.2019</h4>
+                                    </div>
+                
+                                    <div class="cardControlButton">
+                                                <i class="fas fa-play"></i>
+                                                <i class="fas fa-times"></i>
+                                                <i class="fas fa-stop"></i>
+                                                
+                                    </div>
+                            </div>
+
+                    </div>
+
+                               <div>
+                            <div class="tripCard" style = "background-image: linear-gradient(to top, #00c70a 0%, #b0e7ae 100%)">
+                                    <div class="destName">
+                                        <h1 id="destNameDiv">Budapest</h1>
+                                    </div>    
+                
+                
+                                    <div class="tripGuiderInfo">
+                                        <div class="tripGuiderInfoUp">
+                                            <p>Guider Info</p>
+                                        </div>
+                                        <div class="tripGuiderInfoDown">
+                                            <p>Orhan Rosenfeld</p>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="cardDateFrom">
+                                        <h4 id="dateFromLeft">Date From :</h4>
+                                        <h4 id="dateFromRight">18.05.2019</h4>
+                
+                                    </div>
+                
+                                    <div class="cardDateTo">
+                                            <h4 id="dateToLeft">Date To :<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></h4>
+                                            <h4 id="dateToRight">24.05.2019</h4>
+                                    </div>
+                
+                                    <div class="cardControlButton">
+                                                <i class="fas fa-play"></i>
+                                                <i class="fas fa-times"></i>
+                                                <i class="fas fa-stop"></i>
+                                                
+                                    </div>
+                            </div>
+
+                    </div>
+
+
+
+
+
+                               <div>
+                            <div class="tripCard" style = "background-image: linear-gradient(to top, #fa709a 0%, #fee140 100%)">
+                                    <div class="destName">
+                                        <h1 id="destNameDiv">Norway</h1>
+                                    </div>    
+                
+                
+                                    <div class="tripGuiderInfo">
+                                        <div class="tripGuiderInfoUp">
+                                            <p>Guider Info</p>
+                                        </div>
+                                        <div class="tripGuiderInfoDown">
+                                            <p>Orhan Rosenfeld</p>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="cardDateFrom">
+                                        <h4 id="dateFromLeft">Date From :</h4>
+                                        <h4 id="dateFromRight">18.05.2019</h4>
+                
+                                    </div>
+                
+                                    <div class="cardDateTo">
+                                            <h4 id="dateToLeft">Date To :<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></h4>
+                                            <h4 id="dateToRight">24.05.2019</h4>
+                                    </div>
+                
+                                    <div class="cardControlButton">
+                                                <i class="fas fa-play"></i>
+                                                <i class="fas fa-times"></i>
+                                                <i class="fas fa-stop"></i>
+                                                
+                                    </div>
+                            </div>
+
+                    </div>
+
+
+
+                </div>
+
+            
+            </div>
+
+
+
+            <div class="footer">
+                <div class="footerUp">
+                        <div class="footerLogo"></div>
+                            <div class="account">
+                                <div>Account</div>
+                                <div class = "footerRegister"> LogIn/Register</div>
+                                <!-- <div>About</div> -->
+                                <div class = "footerPrice">Pricing</div>
+                                <!-- <div>Jobs</div> -->
+                        </div>
+                        <div class="info">
+                            <div>Information</div>
+                            <div><i class="fas fa-envelope"></i><span class="spanT"></span>Elotra@outlook.com</div>
+                            <div><i class="fas fa-map-marker-alt"></i><span class="spanT"></span>Budapest 1203H</div>
+                            <div><i class="fas fa-mobile"></i><span class="spanT"></span>+36 20 555 45 55</div>
+                        </div>
+                        <!-- <div class="resource">
+                            <div>Resources</div>
+                            <div>Community</div>
+                            <div>Become a Partner</div>
+                            <div>Our Technology</div>
+                            <div>Documentation</div>
+                        </div> -->
+                        <div class="support">
+                            <div>Support</div>
+                            <div class = "footerContact">Contact Us</div>
+                            <div class = "footerTerms">Terms of Use</div>
+                            <div class = "footerPolicy">Privacy Policy</div>
+                        </div>
+                </div>
+                <div class="footerDown">
+                    <div class="fLeftSide">
+                        <div>
+                                2018&reg, The ELOTRA, All Rights Reserved
+                        </div>
+                    </div>
+                    <div class="fRightSide">
+                        <div class="fSocialLinkContainer">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-twitter-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="slick/slideShow.js"></script>
+        <script type="text/javascript" src="scripts/tripHtml.js"></script>
+        <script type="text/javascript" src="scriptr/footer.js"></script>
+    </body>
+</html>
+
+ 

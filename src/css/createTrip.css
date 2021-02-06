@@ -1,0 +1,274 @@
+
+.tripPopUpMenu {
+    position: absolute;
+    left: 0; bottom: 0; right: 0; top: 0;
+    margin: auto;
+    width: 25%;
+    height: 70%;
+    background-color: rgb(226, 239, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    display: none;
+}
+
+.popUpSelf {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0; right: 0; bottom: 0; top: 0;
+    margin: auto;
+}
+
+.popUpHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #92fe9d; */
+    flex-basis: 10%;
+}
+
+/* ------------------------------------------------------------------ */
+.popUpDestination {
+    /* background-color: #00c9ff; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.popUpDestination div {
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 40%;
+    font-size: 0.95vw;
+    justify-content: start;
+    color: #455A64;
+
+}
+.popUpDestination input {
+    width: 95%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+.popUpDateFrom {
+    /* background-color: #3c8599; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.popUpDateFrom div {
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    /* font-size: 0.95vw; */
+    width: 95%;
+    height: 40%;
+    justify-content: start;
+    color: #455A64;
+}
+.popUpDateFrom input {
+    width: 95%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #8e8e8e;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.popUpDateTo {
+    /* background-color: #6154da; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.popUpDateTo div {
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    /* font-size: 0.95vw; */
+    width: 95%;
+    height: 40%;
+    justify-content: start;
+    color: #455A64;
+}
+.popUpDateTo input {
+    width: 95%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #8e8e8e;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+.popUpPeople {
+    /* background-color: #d6d326; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.popUpPLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.popUpPLeft label {
+    color: #F8F8F8;
+    /* font-size: 0.95vw; */
+    padding-left: 7px;
+    color: #455A64;
+}
+
+.popUpNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+}
+
+.popUpNumber select {
+    color: #8e8e8e;
+    width: 90%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------ */
+
+.popUpLocalChoice {
+    /* background-color: #fd4b68; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.localChoicePLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.localChoicePLeft label {
+    color: #F8F8F8;
+    /* font-size: 0.95vw; */
+    padding-left: 7px;
+    color: #455A64;
+}
+
+.localChoiceOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+}
+
+.localChoiceOption select {
+    color: #8e8e8e;
+    width: 90%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+.popUpCheckBox {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.CheckLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.CheckLeft label {
+    color: #F8F8F8;
+    /* font-size: 0.95vw; */
+    padding-left: 7px;
+    color: #455A64;
+}
+
+.CheckOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+}
+
+.CheckOption select {
+    color: #8e8e8e;
+    width: 90%;
+    height: 50%;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+
+.popUpButtonSection {
+    /* background-color: #263238; */
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popUpButtonSection button{
+    background-color: #4FC3F7;
+    height: 50%;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    color: #F8F8F8;
+    font-size: 1vw;
+}

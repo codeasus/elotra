@@ -1,0 +1,601 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+    background: linear-gradient(45deg, #b721ff 0%, #21d4fd 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.socialLinks {
+  grid-column: 3 / 4;
+}
+
+.searchBox {
+  grid-column: 6 / 8;
+}
+
+.registerSection {
+  grid-column: 9 / 11;
+}
+
+/* -----------------------SecondNavBar------------------------- */
+
+.secondNavWhole_ {
+  z-index: 1000;
+  width: 100%;
+  height: 700px;
+  background-image: url("..\\..\\assets\\12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondSlogan {
+    color: rgb(253, 253, 253);
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+}
+
+.secondSlogan h1 {
+    /* background-color: #d9594c; */
+    font-size: 4vmax;
+    margin: 0;
+    margin-bottom: 2vh;
+    color: #29B6F6;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.secondSlogan p {
+    /* background-color: #fad18e; */
+    font-size: 1.5vmax;
+    padding: 0;
+    margin: 0;
+}
+
+.secondNavBar_ {
+  z-index: 1000;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(55,71,79, .7);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.navButtons ul {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+.navButtonsList li {
+  text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: #cfd8dc;
+}
+
+.fa-globe-americas {
+  color: #F8F8F8;
+  font-size: 50px;
+  padding-top: 5px;
+}
+
+.secondNavBar_ .logo {
+  /* background-color: #cfd8dc ; */
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.secondNavBar_ .navButtons {
+  /* background-color: #b0bec5 ; */
+  grid-column: 5 / 9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.secondNavBar_ .profile {
+  /* background-color: #90a4ae; */
+  grid-column: 9 / 11;
+}
+
+.hoverNavigationLinks {
+  color: #F8F8F8 !important;
+
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+}
+
+/* ----------------------------------------TRIP ADDITION ----------------------------------------- */
+
+.addTripButton {
+    /* background-color: #92fe9d; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.addTripButton button {
+    /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+    background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+    border: none;
+    width: 20%;
+    height: 50%;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    color: #F8F8F8;
+}
+
+.emptyAsFuck {
+    width: 100%;
+    height: 50px;
+}
+
+/* ---------------------------------------GetIn Section--------------------------------------------------- */
+
+.getIn {
+  width: 100%;
+  height: 100px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.getIn div {
+  /* background-image: linear-gradient(60deg, #c471f5 0%, #fa71cd 100%); */
+  /* background-image: linear-gradient(to right, #09203f 0%, #537895 100%); */
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  /* background-image: linear-gradient(to left, #cc208e 0%, #6713d2 100%); */
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 70%;
+  width: 45%;
+}
+
+.getIn div h1 {
+  font-size: 2vw;
+}
+
+
+/* ----------------------------- FirstNavBar / SocialIcons------------------------------- */
+.upperNavBar {
+  z-index: 1000;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  height: 35px;
+  background-color: #263238;
+}
+
+
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIconContainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:repeat(4, 24px);
+  grid-template-rows: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIconContainer > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b0bec5;
+  font-size: 20px;
+}
+
+.hoverSocialLinks {
+  color: #F8F8F8 !important;
+}
+
+
+/* -----------------------------FirstNavBar / SearchBox-------------------------------- */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  outline: 0;
+  border: none;
+  text-decoration: none;
+  height: 2.5vh;
+  width: 18vw;
+  border-radius: 3px;
+  padding-left: 0.2vw;
+  background-color: #ddeef7;
+}
+
+.searchInput:hover {
+  background-color: #fcfcfc;
+}
+
+
+/* ----------------------------FirstNavBar / ResgisterButton-------------------------------- */
+
+.registerSection  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.registerButton {
+  outline: 0;
+  border: 1px solid #b0bec5;
+  background-color: #263238;
+  padding: 0.3vh 2vw;
+  color: #b0bec5;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hoverRegisterButton {
+  background-color: #F8F8F8 !important;
+  border-color: #F8F8F8;
+  color: #263238;
+}
+
+
+/* -----------------------------RegistrationForm------------------------------- */
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstLast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.firstLast div {
+  width: 48%;
+}
+
+.noChange {
+  display: flex;
+  flex-direction: column;
+}
+.noChange div {
+  width: 100%;
+}
+
+.country_bday {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.country_bday div{
+  width: 48%;
+}
+
+#country_bdayLeft input {
+  color: #777777;
+}
+.gender_payment_hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gender_payment_hour div {
+  width: 30%;
+}
+
+#gender_payment_hour_left select {
+  outline: 1;
+  background: #f2f2f2;
+  color: #777777;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#gender_payment_hour_left select > option {
+  height: 50px;
+  border-radius: 5px;
+}
+.buttonForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstLast input, .country_bday input{
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.gender_payment_hour input {
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.noChange input {
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.regForm {
+  position: absolute;
+  left: 0; bottom: 0; right: 0; top: 15%;
+  width: 45%;
+  height: 550px;
+  z-index: 1;
+  background-color: white;
+  margin: 0 auto 100px;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;
+  display: none;
+}
+
+.logForm {
+  position: absolute;
+  left: 0; bottom: 0; right: 0; top: 15%;
+  width: 20%;
+  height: 300px;
+  z-index: 1;
+  background-color: white;
+  margin: 0 auto 100px;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;  
+  display: none;
+}
+
+
+.logForm input{
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 80%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+.regForm button, .logForm button {
+  outline: 0;
+  background-image: linear-gradient(135deg, #92fe9d 0%, #00c9ff 100%);
+  width: 80%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+} 
+
+
+
+
+
+/* --------------------------------TRIP EMPTY SPACE------------------------------------ */
+
+.backEndConnection {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.calContainer {
+
+  width: 70%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.calContainer div {
+  flex-basis: 33%;
+  border-radius: 15px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calContainer div h3 {
+  padding: 0;
+  margin: 0;
+}
+.calContainer div:nth-child(1) {
+  border-right: 1px solid #546E7A; 
+}
+.calContainer div:nth-child(2) {
+  border-right: 1px solid #546E7A; 
+}
+
+
+.calContainer div h3:nth-child(1) {
+  font-size: 2vw;
+  color: #37474F;
+  border-bottom: 2px dashed #546E7A
+}
+.calContainer div h3:nth-child(2) {
+  font-family: 'Open Sans';
+  font-size: 3vw;
+  color: #2196F3;
+  
+}
+
+/* ---------------------------------------------------TRIP EMPTY SPACE------------------------------------------------------- */
+
+.yourTripHeading {
+  
+  width: 100%;
+  height: 100px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: 2px dashed #607D8B;
+  /* border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px; */
+}
+
+.yourTripHeading div {
+  /* background-image: linear-gradient(60deg, #c471f5 0%, #fa71cd 100%); */
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 70%;
+  width: 20%;
+}
+
+.getIn div h1 {
+  font-size: 2vw;
+}
+
+/* ------------------------------------------------------------- */
+
+.tripContainer {
+  width: 100%;
+  height: 500px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+
+.slickSliderHolder {
+  z-index: 0;
+  background-color: rgb(217, 235, 243);
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+
+.slickSliderHolder div {
+  height: 100%;
+
+}
+
+.slickSliderHolder .tripCard {
+  margin:auto;
+}
+

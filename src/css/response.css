@@ -1,0 +1,69 @@
+.popUpResponse {
+
+    position: fixed;
+    left: 0; right: 0; bottom: 0; top: 0;
+    margin: auto;
+    z-index: 1;
+
+    background-color: #F5F5F5;
+    width: 320px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+}
+
+.responseHolder {
+    position: relative;
+    left: 0; bottom: 0; right: 0; top: 0;
+    margin: auto;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.responseHolderUp {
+    width: 95%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responseHolderUp h4 {
+    font-size: 1vw;
+}
+
+
+.responseHolderDown {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.responseHolderDown button {
+    color: #F5F5F5;
+    border-radius: 5px;
+    border: none;
+    height: 50%;
+    width: 45%;
+    font-size: 0.8vw;
+}
+
+.responseHolderDown .confirm {
+    background-color: #66BB6A;
+}
+
+.responseHolderDown .deny {
+    background-color: #ef5350;
+}

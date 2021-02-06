@@ -1,0 +1,118 @@
+
+.tripCard {
+    width: 270px;
+    height: 390px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tripCard {
+    color: #ECEFF1;
+}
+
+.tripCard div {
+    flex-basis: 20%;
+}
+
+.destName {
+    border-radius: 10px;
+    color: #ECEFF1;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------------------------- */
+
+.tripGuiderInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ECEFF1;
+    /* background-color: aqua; */
+}
+
+.tripGuiderInfo div p {
+    padding: 0;
+    margin: 0;
+}
+
+.tripGuiderInfo div {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+}
+
+.tripGuiderInfoUp {
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.tripGuiderInfoUp {
+    /* background-color: #fa709a; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.4vw;
+    flex-basis: 50%
+}
+
+.tripGuiderInfoDown {
+    /* background-color: #fee140; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+    flex-basis: 50%;
+}
+
+.tripGuiderInfoDown {
+    padding: 5px 0;
+
+}
+
+
+/* ----------------------------------------------------------- */
+
+.cardDateFrom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.cardDateFrom h4 {
+    font-size: 1vw;
+}
+
+/* ----------------------------------------------------------- */
+
+
+.cardDateTo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.cardDateTo h4 {
+    font-size: 1vw;
+}
+/* ----------------------------------------------------------- */
+.cardControlButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    /* justify-content: space-evenly; */
+}
+
+.cardControlButton {
+    color: azure;
+    font-size: 1.5vw;
+}
+
+.cardControlButton i {
+    margin-right: 15px;
+}
+

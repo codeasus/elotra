@@ -1,0 +1,497 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+    background: linear-gradient(45deg, #b721ff 0%, #21d4fd 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.socialLinks {
+  /* background-color: #ffcc5c; */
+  grid-column: 3 / 4;
+}
+
+.searchBox {
+  /* background-color: #880000; */
+  grid-column: 6 / 8;
+}
+
+.registerSection {
+  /* background-color: #ff6f69; */
+  grid-column: 9 / 11;
+}
+
+/* -----------------------SecondNavBar------------------------- */
+
+.secondNavWhole_ {
+  z-index: 1000;
+  width: 100%;
+  height: 700px;
+  background-image: url("..\\..\\assets\\32.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondSlogan {
+    /* background-color: #00c9ff; */
+    color: azure;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+}
+
+.secondSlogan h1 {
+    /* background-color: #d9594c; */
+    font-size: 4vmax;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.secondSlogan p {
+    /* background-color: #fad18e; */
+    font-size: 1.5vmax;
+    padding: 0;
+    margin: 0;
+}
+
+.secondNavBar_ {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(55,71,79, .7);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.navButtons ul {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+.navButtonsList li {
+  text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  color: #cfd8dc;
+}
+
+.fas {
+  color: #F8F8F8;
+  font-size: 50px;
+  padding-top: 5px;
+}
+
+.secondNavBar_ .logo {
+  /* background-color: #cfd8dc ; */
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.secondNavBar_ .navButtons {
+  /* background-color: #b0bec5 ; */
+  grid-column: 5 / 9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.secondNavBar_ .profile {
+  /* background-color: #90a4ae; */
+  grid-column: 9 / 11;
+}
+
+.hoverNavigationLinks {
+  color: #F8F8F8 !important;
+
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+}
+
+/* ---------------------------------------GetIn Section------------------------------------------------------------------------------ */
+
+.getIn {
+  width: 100%;
+  height: 100px;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.getIn div {
+  background-image: linear-gradient(60deg, #c471f5 0%, #fa71cd 100%);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 8vh;
+  width: 30vw;
+}
+
+.getIn div h1 {
+  font-size: 2vw;
+}
+
+
+
+
+/* ----------------------------- FirstNavBar / SocialIcons------------------------------- */
+.upperNavBar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  height: 35px;
+  background-color: #263238;
+  z-index: 1;
+}
+
+
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialIconContainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:repeat(4, 24px);
+  grid-template-rows: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIconContainer > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b0bec5;
+  font-size: 20px;
+}
+
+.hoverSocialLinks {
+  color: #F8F8F8 !important;
+}
+
+
+/* -----------------------------FirstNavBar / SearchBox-------------------------------- */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  outline: 0;
+  border: none;
+  text-decoration: none;
+  height: 2.5vh;
+  width: 18vw;
+  border-radius: 3px;
+  padding-left: 0.2vw;
+  background-color: #ddeef7;
+}
+
+.searchInput:hover {
+  background-color: #fcfcfc;
+}
+
+
+/* ----------------------------FirstNavBar / ResgisterButton-------------------------------- */
+
+.registerSection  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.registerButton {
+  outline: 0;
+  border: 1px solid #b0bec5;
+  background-color: #263238;
+  padding: 0.3vh 2vw;
+  color: #b0bec5;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hoverRegisterButton {
+  background-color: #F8F8F8 !important;
+  border-color: #F8F8F8;
+  color: #263238;
+}
+
+
+/* -----------------------------RegistrationForm------------------------------- */
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headingForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstLast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.firstLast div {
+  width: 48%;
+}
+
+.noChange {
+  display: flex;
+  flex-direction: column;
+}
+.noChange div {
+  width: 100%;
+}
+
+.country_bday {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.country_bday div{
+  width: 48%;
+}
+
+#country_bdayLeft input {
+  color: #777777;
+}
+.gender_payment_hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gender_payment_hour div {
+  width: 30%;
+}
+
+#gender_payment_hour_left select {
+  outline: 1;
+  background: #f2f2f2;
+  color: #777777;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#gender_payment_hour_left select > option {
+  height: 50px;
+  border-radius: 5px;
+}
+.buttonForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.firstLast input, .country_bday input{
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.gender_payment_hour input {
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.noChange input {
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.regForm {
+  position: absolute;
+  left: 0; bottom: 0; right: 0; top: 15%;
+  width: 45%;
+  height: 550px;
+  z-index: 1;
+  background-color: white;
+  margin: 0 auto 100px;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;
+  display: none;
+}
+
+.logForm {
+  position: absolute;
+  left: 0; bottom: 0; right: 0; top: 15%;
+  width: 20%;
+  height: 300px;
+  z-index: 1;
+  background-color: white;
+  margin: 0 auto 100px;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;  
+  display: none;
+}
+
+
+.logForm input{
+  outline: 1;
+  background: #f2f2f2;
+  height: 50px;
+  width: 80%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+.regForm button, .logForm button {
+  outline: 0;
+  background-image: linear-gradient(135deg, #92fe9d 0%, #00c9ff 100%);
+  width: 80%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+} 
+/* ----------------------------Contact Us-------------------------------- */
+
+.contactUs {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contactUs .window {
+    width: 80%;
+    height: 65%;
+    background-color: #e7eef1;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contactForm input {
+    outline: 1;
+    font-size: 1em;
+    padding-left: 5px;
+    background: #fff;
+    height: 50px;
+    width: 80%;
+    border: 0;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.contactForm button {
+    outline: 0;
+    width: 30%;
+    font-size: 1.3vw;
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    /* background-image: linear-gradient(60deg, #43e97b 0%, #38f9d7 100%); */
+    background-image: linear-gradient(60deg, #c471f5 0%, #fa71cd 100%);
+    cursor: pointer;
+}
+
+
+
+.contactForm textarea {
+    height: 220px;
+    width: 80%;
+    margin-bottom: 4%;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    resize: none;
+    background-color: #fff;
+}
+
