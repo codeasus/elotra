@@ -4,7 +4,7 @@
 
 ## Screenshots :: Index.html
 
-  ![](screenshots\index_html.png)
+  ![](screenshots/index_html.png)
 
 ### Note
   trip.html has an implemented javascript carousel towards the bottom of the page. Therefore you can swipe left and right just to have a bit of fun. 
