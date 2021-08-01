@@ -1,6 +1,6 @@
 # Elotra
 
-  During the development of the project in college, we had limited time to develop the frontend part, so, mobile responsiveness was not the priority. Therefore, if some pages do not not scale well or respond properly on different screen resolutions, or you don't like the codebase just roll with it, I don't like it either XD. Morover, the project was intented to be a prototype and some part of the project was hard coded.    
+  During the development of the project in college, we had limited time to develop the frontend part, so, mobile responsiveness was not the priority. Therefore, if some pages do not not scale well or respond properly on different screen resolutions, or you don't like the codebase just roll with it, I don't like it either. Morover, the project was intented to be a prototype and some part of the project was hard coded.    
 
 ## Screenshots :: index.html
 
